@@ -1,6 +1,9 @@
 # Proiect_Python_Iacob_Denisa
+
 Tip: C
+
 ID: 3
+
 Sa se scrie o aplicatie in care utilizatorul trebuie sa ghicesca un anumit cuvant. Cuvintele vor
 fi predefinite si vor avea o anumita categorie. La rulare userul alege o categorie si se va alege
 un cuvant random din cele existente in categoria aleasa. Utilizatorul poate incerca cate o
