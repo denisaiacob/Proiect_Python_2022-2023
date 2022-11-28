@@ -1,0 +1,4 @@
+jaguar, 3
+festival, 4
+regată, 3
+ponei, 2
