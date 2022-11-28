@@ -1,3 +1,7 @@
+import io
+import random
+
+
 def choose_category(categoryList):
     print("\nCategoriile de cuvinte sunt:")
     for i in categoryList:
@@ -21,6 +25,16 @@ def random_word(category, fileList):
         return words[random.randint(0, len(words))]
     except:
         print("Unable to open file ", fileList[category])
+
+
+def write_score(word, mistakes):
+    try:
+        score = word + ', ' + str(mistakes) + '\n'
+        f = io.open("score.txt", "a", encoding='utf-8')
+        f.write(score)
+        f.close()
+    except:
+        print("Unable to open file score.txt")
 
 
 def print_word(word):
