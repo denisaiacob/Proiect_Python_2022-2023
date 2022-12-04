@@ -3,12 +3,15 @@ import random
 
 
 def choose_category(categoryList):
+    animale = '1'
+    film = '2'
+    sport = '3'
     print("\nCategoriile de cuvinte sunt:")
     for i in categoryList:
         print(i)
     category = input("\nScrie numarul categoriei dorite ")
     while 1:
-        if category == '1' or category == '2' or category == '3':
+        if category == animale or category == film or category == sport:
             return int(category)
         else:
             print("Caracterul introdus nu face parte din lista")
@@ -81,3 +84,4 @@ if __name__ == "__main__":
     category = choose_category(categoryList)
     word = random_word(category, fileList)
     print_word(word)
+
